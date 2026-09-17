@@ -23,3 +23,8 @@
 .btn-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
 .hero-actions .btn-phone{background:transparent!important;color:#fff!important;border:2px solid #2F73DC!important;box-shadow:none!important}
 .hero-actions .btn-phone:hover{background:rgba(47,115,220,.16)!important;color:#fff!important;border-color:#2F73DC!important}
+
+/* WhatsApp flotante con Font Awesome Brands */
+.wa-icon{background:#25D366;color:#fff;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.2);font-size:37px;line-height:1}
+.wa-icon i{display:block;font-style:normal}
+@media(max-width:800px){.wa-icon{width:64px;height:64px;font-size:36px}}
