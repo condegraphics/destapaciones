@@ -18,3 +18,8 @@
 .contact-section .contact-links small{color:rgba(255,255,255,.78)}
 .contact-links a>span{border-color:rgba(255,255,255,.6);color:#fff}
 @media(max-width:800px){.hero-actions{display:grid;grid-template-columns:1fr;gap:12px}.hero-actions .btn{width:100%}}
+
+/* Iconos de acción y teléfono outline */
+.btn-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.hero-actions .btn-phone{background:transparent!important;color:#fff!important;border:2px solid #2F73DC!important;box-shadow:none!important}
+.hero-actions .btn-phone:hover{background:rgba(47,115,220,.16)!important;color:#fff!important;border-color:#2F73DC!important}
