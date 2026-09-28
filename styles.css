@@ -63,3 +63,16 @@
 @media(max-width:1200px){.reviews-section-new .reviews-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.reviews-section-new{padding:48px 0 58px}.reviews-section-new .reviews-header-top{flex-direction:column;align-items:flex-start;padding:0;margin-bottom:34px;gap:24px}.reviews-section-new .reviews-title-group{gap:16px}.reviews-section-new .reviews-grid{grid-template-columns:1fr}.reviews-section-new .review-item{min-height:0}.btn-review-google{width:100%}}
 .check-list li{line-height:1.45}
+
+/* CTA de contacto y reseñas alineados con el sistema visual de botones */
+.specialist-cta{margin-top:18px}
+.btn-review-google{background:#4285ee!important;color:#fff!important;border:0!important;border-radius:14px!important;padding:0 23px!important;min-height:52px;box-shadow:8px 8px 18px rgba(9,43,85,.12)}
+.btn-review-google:hover{background:#2f73dc!important}
+.contact-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.contact-actions .btn{min-height:58px;padding:0 24px;border-radius:12px}
+.contact-actions .btn-whatsapp{background:#2bd36b!important;color:#fff!important;box-shadow:8px 8px 20px rgba(43,211,107,.24)}
+.contact-actions .btn-whatsapp:hover{background:#20ba59!important}
+.contact-actions .contact-phone-btn{background:transparent!important;color:#fff!important;border:2px solid #2f73dc!important;box-shadow:none!important}
+.contact-actions .contact-phone-btn:hover{background:rgba(47,115,220,.16)!important}
+.contact-actions .btn span{font-size:18px;line-height:1}
+@media(max-width:800px){.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions .btn{width:100%}.specialist-cta{width:100%}}
