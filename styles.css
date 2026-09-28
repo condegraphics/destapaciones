@@ -41,7 +41,7 @@
 .reviews-section-new .reviews-header-top{display:flex;align-items:center;justify-content:space-between;gap:40px;margin-bottom:50px;padding:0 22px}
 .reviews-section-new .reviews-title-group{display:flex;align-items:center;gap:25px;flex-wrap:wrap}
 .reviews-section-new .google-brand{display:flex;align-items:center;gap:8px;color:#111;font:700 20px Raleway,sans-serif}
-.reviews-section-new .google-brand img{width:92px;height:32px;object-fit:contain}
+.reviews-section-new .google-brand img{width:184px;height:64px;object-fit:contain}
 .reviews-section-new .rating-inline{display:flex;align-items:center;gap:7px;color:#111;font:400 14px Roboto,sans-serif}
 .reviews-section-new .rating-inline strong{font:900 19px Raleway,sans-serif}
 .reviews-section-new .rating-inline span,.reviews-section-new .review-stars{color:#fbbc04;letter-spacing:1px}
