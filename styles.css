@@ -38,7 +38,6 @@
 /* Demo de reseñas ficticias para presentación al cliente */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .reviews-section-new{background:#fff;padding:60px 0 72px;color:#102c4f}
-.reviews-demo-note{display:inline-block;margin-bottom:18px;color:#9b8b7a;font:800 10px/1 Raleway,sans-serif;letter-spacing:1.1px}
 .reviews-section-new .reviews-header-top{display:flex;align-items:center;justify-content:space-between;gap:40px;margin-bottom:50px;padding:0 22px}
 .reviews-section-new .reviews-title-group{display:flex;align-items:center;gap:25px;flex-wrap:wrap}
 .reviews-section-new .google-brand{display:flex;align-items:center;gap:8px;color:#111;font:700 20px Raleway,sans-serif}
