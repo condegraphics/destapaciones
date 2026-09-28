@@ -62,3 +62,4 @@
 .reviews-section-new .g-icon{display:block;width:20px;height:20px;object-fit:contain;flex:0 0 20px}
 @media(max-width:1200px){.reviews-section-new .reviews-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.reviews-section-new{padding:48px 0 58px}.reviews-section-new .reviews-header-top{flex-direction:column;align-items:flex-start;padding:0;margin-bottom:34px;gap:24px}.reviews-section-new .reviews-title-group{gap:16px}.reviews-section-new .reviews-grid{grid-template-columns:1fr}.reviews-section-new .review-item{min-height:0}.btn-review-google{width:100%}}
+.check-list li{line-height:1.45}
