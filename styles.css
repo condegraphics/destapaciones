@@ -76,3 +76,9 @@
 .contact-actions .contact-phone-btn:hover{background:rgba(47,115,220,.16)!important}
 .contact-actions .btn span{font-size:18px;line-height:1}
 @media(max-width:800px){.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions .btn{width:100%}.specialist-cta{width:100%}}
+
+/* Alineación del encabezado de reseñas de Google */
+.reviews-section-new .reviews-title-group{align-items:center;flex-wrap:nowrap}
+.reviews-section-new .google-brand{align-items:center;white-space:nowrap}
+.reviews-section-new .google-brand img{width:92px;height:32px;object-fit:contain}
+@media(max-width:768px){.reviews-section-new .reviews-title-group{flex-wrap:wrap}}
