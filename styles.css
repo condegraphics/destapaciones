@@ -124,3 +124,10 @@
   .hero-actions .btn{font-size:14.3px}
   .hero-actions .btn-icon{height:22px;width:22px}
 }
+
+/* Navegación en uppercase y teléfono como CTA en escritorio */
+.main-nav> a:not(.mobile-nav-close){text-transform:uppercase}
+@media(min-width:801px){
+  .header-phone{align-items:center;background:#2f73dc;border:0;border-radius:10px;box-shadow:0 8px 18px rgba(47,115,220,.22);color:#fff;display:inline-flex;gap:9px;justify-content:center;min-height:46px;padding:0 18px;transition:background .2s,transform .2s,box-shadow .2s}
+  .header-phone:hover{background:#235fbd;box-shadow:0 10px 22px rgba(47,115,220,.3);color:#fff;transform:translateY(-2px)}
+}
