@@ -114,3 +114,13 @@
   .mobile-nav-phone strong{color:#fff;font:800 17px Raleway,sans-serif}
   .mobile-nav-cta{border-radius:10px!important;min-height:54px;width:100%}
 }
+
+/* Ajustes mobile: logo centrado, header despejado y CTA del hero más legible */
+@media(max-width:800px){
+  .header-inner{justify-content:center;position:relative}
+  .brand{margin-inline:auto}
+  .header-phone{display:none}
+  .nav-button{margin-left:0;position:absolute;right:0}
+  .hero-actions .btn{font-size:14.3px}
+  .hero-actions .btn-icon{height:22px;width:22px}
+}
