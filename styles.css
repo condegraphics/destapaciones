@@ -72,9 +72,8 @@
 .contact-actions .btn{min-height:58px;padding:0 24px;border-radius:12px}
 .contact-actions .btn-whatsapp{background:#2bd36b!important;color:#fff!important;box-shadow:8px 8px 20px rgba(43,211,107,.24)}
 .contact-actions .btn-whatsapp:hover{background:#20ba59!important}
-.contact-actions .contact-phone-btn{background:transparent!important;color:#fff!important;border:2px solid #2f73dc!important;box-shadow:none!important}
+.contact-actions .contact-phone-btn{background:transparent!important;color:#fff!important;border:2px solid #fff!important;box-shadow:none!important}
 .contact-actions .contact-phone-btn:hover{background:rgba(47,115,220,.16)!important}
-.contact-actions .btn span{font-size:18px;line-height:1}
 @media(max-width:800px){.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions .btn{width:100%}.specialist-cta{width:100%}}
 
 /* Alineación del encabezado de reseñas de Google */
