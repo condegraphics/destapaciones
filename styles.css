@@ -241,3 +241,9 @@
 @media (prefers-reduced-motion:reduce){
   main h2:not(.sr-only){opacity:1;transform:none;animation:none!important}
 }
+
+
+/* Más aire entre la bajada de contacto y sus CTA */
+.contact-section .contact-lead{margin-bottom:34px!important}
+.contact-section .contact-actions{margin-top:22px}
+.contact-section .contact-lead a{color:inherit;text-decoration:underline;text-underline-offset:3px}
