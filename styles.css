@@ -131,3 +131,10 @@
   .header-phone{align-items:center;background:#2f73dc;border:0;border-radius:10px;box-shadow:0 8px 18px rgba(47,115,220,.22);color:#fff;display:inline-flex;gap:9px;justify-content:center;min-height:46px;padding:0 18px;transition:background .2s,transform .2s,box-shadow .2s}
   .header-phone:hover{background:#235fbd;box-shadow:0 10px 22px rgba(47,115,220,.3);color:#fff;transform:translateY(-2px)}
 }
+
+/* Ajustes solicitados para el Hero */
+.hero h1{font-family:"Merriweather Sans",sans-serif;font-size:70px;font-weight:800;line-height:77px}
+.hero-actions .btn{font-size:16px}
+@media(max-width:800px){
+  .hero h1{font-size:46px;line-height:1.02}
+}
