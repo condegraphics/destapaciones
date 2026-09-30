@@ -25,7 +25,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="styles.css">
-  <script>document.documentElement.classList.add('js');</script>
   <link rel="icon" href="assets/logo-2025.jpg" type="image/jpeg">
   <script type="application/ld+json">
 {
@@ -177,24 +176,5 @@
   <footer class="site-footer"><div class="container footer-inner"><img src="assets/logo-2025.jpg" alt="Destapaciones con Máquina" width="140" height="36"><p>Destapaciones de cañerías con máquina profesional · Atención 24 hs en CABA</p><a href="tel:+5491139137775">11 3913-7775</a></div></footer>
   <a class="floating-whatsapp" href="https://wa.me/5491139137775?text=Hola%2C%20necesito%20una%20destapaci%C3%B3n%20urgente%20en%20CABA.%20Quisiera%20consultar%20disponibilidad%20y%20presupuesto." target="_blank" rel="noopener" aria-label="Consultar disponibilidad y presupuesto por WhatsApp"><span class="wa-label">¿Necesitás una solución?</span><span class="wa-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span></a>
   <script>document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const n=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),phone=document.getElementById('phone').value.trim(),subject=document.getElementById('subject').value.trim(),m=document.getElementById('message').value.trim();const t=encodeURIComponent('Consulta de: '+n+'\nEmail: '+email+'\nTeléfono: '+phone+'\nAsunto: '+subject+'\nDetalles: '+m);window.open('https://wa.me/5491139137775?text='+t,'_blank','noopener');});</script>
-  <script>
-    (function () {
-      const headings = document.querySelectorAll('main h2:not(.sr-only)');
-      if (!headings.length) return;
-      if (!('IntersectionObserver' in window)) {
-        headings.forEach((heading) => heading.classList.add('is-visible'));
-        return;
-      }
-      const observer = new IntersectionObserver((entries, observerInstance) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observerInstance.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
-      headings.forEach((heading) => observer.observe(heading));
-    }());
-  </script>
 </body>
 </html>
