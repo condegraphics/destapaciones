@@ -138,3 +138,18 @@
 @media(max-width:800px){
   .hero h1{font-size:46px;line-height:1.02}
 }
+
+
+/* Redes sociales: efecto circular inspirado en la referencia Uiverse */
+.social-actions{display:flex;align-items:center;gap:18px;margin-top:42px;padding-top:4px}
+.social-button{align-items:center;background:#fff;border:0;border-radius:50%;color:#fff;display:flex;font-family:Raleway,Arial,sans-serif;font-size:24px;height:50px;justify-content:center;position:relative;transition:transform .15s ease;width:50px;z-index:0}
+.social-button::before{background:#092b55;border-radius:50%;content:"";height:56px;position:absolute;transition:height .35s ease,width .35s ease;width:56px;z-index:-1}
+.social-button i{position:relative;z-index:1}
+.social-instagram{background:linear-gradient(120deg,#833ab4,#fd1d1d 55%,#fcb045)}
+.social-facebook{background:#1877f2}
+.social-whatsapp{background:linear-gradient(120deg,#25d366,#128c4a)}
+.social-button:hover::before,.social-button:focus-visible::before{height:0;width:0}
+.social-button:hover{transform:translateY(-2px)}
+.social-button:active{transform:scale(.85)}
+.social-button:focus-visible{outline:3px solid #fff;outline-offset:5px}
+@media(max-width:800px){.social-actions{gap:16px;margin-top:38px}.social-button{height:50px;width:50px}}
