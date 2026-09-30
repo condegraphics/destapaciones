@@ -1,0 +1,40 @@
+# Configuración Apache/LiteSpeed para https://destapacionesconmaquina.com.ar/
+Options -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Dominio canónico: HTTPS y sin www.
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\.destapacionesconmaquina\.com\.ar$ [NC]
+  RewriteRule ^ https://destapacionesconmaquina.com.ar%{REQUEST_URI} [R=301,L,NE]
+
+  # Variantes habituales de la portada anterior.
+  RewriteRule ^(?:index\.php|home|inicio)/?$ https://destapacionesconmaquina.com.ar/ [R=301,L,NE]
+
+  # Parámetros de portada de WordPress: se conserva una única URL canónica.
+  RewriteCond %{QUERY_STRING} (^|&)(p|page_id)=[^&]+ [NC]
+  RewriteRule ^ https://destapacionesconmaquina.com.ar/ [R=301,L,NE,QSD]
+
+  # Rutas automáticas de WordPress que no existen en la nueva one page.
+  RewriteRule ^(?:author|gallery|attachment|category|tag|feed|comments)(?:/|$) - [G,L,NC]
+  RewriteRule ^(?:wp-admin|wp-includes|wp-content|wp-json)(?:/|$) - [G,L,NC]
+  RewriteRule ^xmlrpc\.php$ - [G,L,NC]
+
+  # Bloquea archivos ocultos, salvo el desafío estándar de Let's Encrypt.
+  RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L]
+</IfModule>
+
+# Compresión de texto si el módulo está habilitado en Hostinger.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/xml application/xhtml+xml application/rss+xml application/javascript application/json image/svg+xml
+</IfModule>
+
+# Caché de recursos estáticos versionables.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp|svg|ico|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>

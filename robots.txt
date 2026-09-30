@@ -1,0 +1,7 @@
+# Directivas para buscadores
+User-agent: *
+Allow: /
+
+# La versión pública es una one page; las rutas heredadas de WordPress
+# devuelven 410 mediante .htaccess y no se incluyen en el sitemap.
+Sitemap: https://destapacionesconmaquina.com.ar/sitemap.xml
